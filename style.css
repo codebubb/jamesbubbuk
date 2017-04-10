@@ -1,0 +1,171 @@
+/* Global Styles */
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'source-sans-pro', sans-serif;
+  font-size: 16pt;
+}
+section{
+  padding: 40px 0;
+}
+.container{
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.col{
+  width: calc(50% - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+h1,h2{
+  font-family: forum, serif;
+}
+h2{
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+h3{
+  font-size: 1.4em;
+  font-weight: 500;
+}
+p{
+  line-height: 20pt;
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #5b2fb6;
+  transition: color .3s;
+}
+a:hover{
+  color: #8449ff;
+}
+
+a.btn.link{
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #5b2fb6;
+  color: white;
+  padding: 5px;
+  transition: background-color .3s
+}
+a.btn.link:hover{
+    background-color: #8449ff;
+}
+/* Hero section styles */
+section#hero{
+  height: 700px;
+  background-color: black;
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background-image: url(mountains.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+section#hero h1.title{
+  font-size: 3em;
+  margin: 0;
+}
+section#hero p.subtitle{
+  font-size: 18pt;
+}
+section#hero img.expand{
+  margin-top: 150px;
+}
+/* End Hero section styles */
+
+
+/* About section styles */
+section#about{
+  background-color: #fff;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 0px 8px 4px rgba(0,0,0,0.2);
+
+}
+
+section#about .col.photo{
+  text-align: center;
+  overflow: visible;
+}
+section#about img{
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 12px 1px rgba(0,0,0,0.3);
+}
+
+/* End About section styles */
+
+
+/* Portfolio section styles*/
+section#portfolio{
+  background-color: #dbdbdb;
+  z-index: 2;
+}
+
+
+section#portfolio img{
+  height: 250px;
+  width: 100%;
+  box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
+}
+section#portfolio h3{
+  font-family: 'forum', serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  border-top: 2px solid rgba(0,0,0,.1);;
+}
+
+/* End portfolio section styles */
+
+/* Skills section styles */
+section#skills{
+  background-image: url(img/skills.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+  box-shadow: 0 0px 8px 4px rgba(0,0,0,0.2);
+}
+section#skills ul li{
+  padding: 15px 0;
+}
+
+footer{
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px){
+  /* Adjust columns to single */
+  .col{
+    width: 100%;
+  }
+  .col.photo{
+    text-align: center;
+  }
+  /* Add a bit of padding to container */
+  .container{
+    padding: 8px;
+  }
+}

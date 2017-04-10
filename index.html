@@ -4,54 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<script src="https://use.edgefonts.net/forum.js"></script>
-
-  <title>James Bubb = Full Stack Developer</title>
-  <style>
-    *{
-      box-sizing: border-box;
-    }
-    body{
-      font-family: forum, serif;
-      margin:0;
-      padding: 0;
-    }
-    h1.title{
-      font-size: 48pt;
-      margin: 0;
-    }
-    p.subtitle{
-      font-size: 18pt;
-    }
-    section{
-      height: 100vh;
-    }
-    section.hero{
-      background-color: black;
-      padding-top: 40vh;
-      text-align: center;
-      color: white;
-      background-image: url(mountains.jpg);
-      background-size: cover;
-      background-position: center center;
-    }
-    section.about{
-      background-color: #fff;
-    }
-    img.expand{
-      margin-top: 20vh;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;forum.js"></script>
+  <title>James Bubb = Junior Front End Developer</title>
 </head>
 <body>
-<section class="hero">
-  <h1 class="title">James Bubb</h1>
-  <p class="subtitle">Full Stack Developer</p>
-  <img class="expand" src="expand.png" alt="">
+  <section id="hero">
+    <h1 class="title">James Bubb</h1>
+    <p class="subtitle">Junior Front End Developerr</p>
+    <a href="#about"><img class="expand" src="expand.png" alt="Expand"></a>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2>About me</h2>
+      <div class="col photo">
+        <img src="jamesbubb.jpg" alt="James Bubb">
+      </div><!--
+      --><div class="col">
+      <h3>Hi. I'm James and I like to make things.</h3>
+    </div>
+    <p>I am passionate about web development.</p>
+    <p>I love learning how software has been put together and wondering <em>How could I do that?</em></p>
+    <p>In my current role I work with apprentices, teaching them the the fundamentals of programming. I have also previously worked within a successful support team for a professional web hosting company which allowed me to develop a keen problem solving mindset.</p>
+
+    <p>Recently I have started a new project called <a href="https://www.juniordevelopercentral.com/">Junior Developer Central</a> in order to help people learn to code and build websites.</p>
+
+  </div>
+</div>
 </section>
-<section class="about">
-  <h2>I'll tell you what I want, what I really really want.</h2>
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="container">
+    <p>These are some examples of my web development work over the last few months.<p>
+      <div class="col">
+        <h3><a href="http://jamesbubb.uk/angular-phonebook">Angular PhoneBook</a></h3>
+        <a href="http://jamesbubb.uk/angular-phonebook"><img src="img/angular-phonebook.jpg" alt="Angular Phonebook"></a>
+        <p>I wanted to understand a bit more about how Angular directives and filter worked.</p><p>  By creating a quick phonebook app I realised I didn't need to use custom directives for what I was trying to achieve!</p>
+        <a href="http://jamesbubb.uk/angular-phonebook" class="btn link">See the demo</a>
+      </div><!--
+      --><div class="col">
+      <h3><a href="https://jamesbubb.uk/shopping_cart">Shopping Cart</a></h3>
+      <a href="https://jamesbubb.uk/shopping_cart"><img src="img/shopping_cart.jpg" alt="Shopping Carts"></a>
+      <p>I followed a design I found on <a href="https://dribbble.com">dribble.com</a> and challenged myself to recreate some of the functionality.</p><p>It was challenging trying to resize background images within the hover state.</p>
+      <a href="http://jamesbubb.uk/shopping_cart" class="btn link">See the demo</a>
+    </div>
+    <div class="col">
+      <h3><a href="http://jamesbubb.uk/modus_versus">Modus Versus</a></h3>
+      <a href="http://jamesbubb.uk/modus_versus"><img src="img/modus.jpg" alt="Modus Versus"></a>
+      <p>I found an interesting PSD file that I wanted to convert into a responsive site for some practice.</p><p>The exercises was useful as it was good to think about how the responsive element of the site might look.</p>
+      <a href="http://jamesbubb.uk/modus_versus" class="btn link">See the demo</a>
+    </div><!--
+    --><div class="col">
+    <h3><a href="http://onlinebingofans.co.uk">Online Bingo Fans</a></h3>
+    <a href="http://onlinebingofans.co.uk"><img src="img/onlinebingofans.jpg" alt="Online Bingo Fans"></a>
+    <p>I created onlinebingofans.co.uk as a tool for Bingo players to find the best current offers and deals.</p><p>There is a Ruby script which checks various popular sites and updates a database which then populates the site.</p>
+    <a href="http://onlinebingofans.co.uk" class="btn link">Visit the site</a>
+  </div>
+  <p>You can see more examples of my work on my <a href="https://github.com/codebubb">GitHub profile</a>.</p>
+</div>
 </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="container">
+    <ul>
+      <li>Can write clean semantic HTML and CSS (also SASS) using JavaScript for enhancement of sites</li>
+      <li>Good knowledge of front-end frameworks such as Bootstrap, jQuery</li>
+      <li>Confident using NodeJS, PHP/MySQL and Git</li>
+      <li>Familiar with Laravel, Angular, Express</li>
+      <li>Knowledge and practical skills with MVC, TDD/BDD, OOP</li>
+      <li>Strong communication and interpersonal skills </li>
+    </ul>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact me</h2>
+  <div class="container">
+  <ul>
+    <li>Email: <a href="mailto:contact@jamesbubb">contact@jamesbubb.uk</a></li>
+    <li>Twitter: <a href="https://twitter.com/codebubb">@codebubb</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/jamesbubb/">https://www.linkedin.com/in/jamesbubb/</a></li>
+  </ul>
+  </div>
+</section>
+<footer>
+  <p>&copy; James Bubb 2017</p>
+</footer>
 </body>
 </html>
